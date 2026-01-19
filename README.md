@@ -21,7 +21,8 @@ python ollama_server.py
 Boots up a flask server at port `:11434`. Download any software that uses ollama, for example the [Ollama Home Assistant integration](https://www.home-assistant.io/integrations/ollama/) and connect it to your flask server. Your application should be able to recognize all of the available LLMs. 
 *Technically* it supports tool calling, but that was added very late into the process and it was only tested with Home Assistant. 
 
-Example Prompts:
+## Example Prompts:
+
 AT&T:
 ```
 
