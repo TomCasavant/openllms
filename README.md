@@ -1,4 +1,6 @@
 # OpenLLMs
+[Related Blog Post](https://tomcasavant.com/your-search-button-powers-my-smart-home/)
+
 OpenLLMs was a project investigating the use of LLMs across different sites and experimenting w/ using those LLMs in a different context. Uses as few external packages as possible, and flask[async] primarily so it could be easily compatible with the Maubot plugin system. 
 
 ## Usage:
