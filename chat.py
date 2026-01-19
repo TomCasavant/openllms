@@ -48,7 +48,7 @@ if __name__ == "__main__":
     async def main():
         async with aiohttp.ClientSession() as session:
             # Instantiate clients
-            # Grab all classes in openllms.clients that inherit from AuthenticatedClient
+            # Grab all classes in openllms.clients that inherit from LLM
             all_client_classes = [
                 cls for name, cls in inspect.getmembers(clients_module, inspect.isclass)
                 if issubclass(cls, LLM)
