@@ -30,6 +30,9 @@ class LLM(ABC):
         self.append_prompt = append_prompt
 
     def build_prompt(self, message: str) -> str:
+        """
+        Modifies the prompt so that self.prepend is before the message and self.append is after. Returns the result
+        """
         return f"{self.prepend_prompt}{message}{self.append_prompt}"
 
     async def _get(self, url: str, **kwargs):
@@ -65,6 +68,9 @@ class AuthenticatedClient(LLM, ABC):
 
     @abstractmethod
     async def fetch_session_id(self):
+        """
+        Gets and returns a session id. Some LLMs have endpoints for this, for others you can just manually generate a UUID for your session.
+        """
         pass
 
     async def authenticate(self):
