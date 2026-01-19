@@ -4,6 +4,8 @@ OpenLLMs was a project investigating the use of LLMs across different sites and 
 ## Usage:
 Primarily intended to be used as a package in other projects, but it does include a few sample scripts.
 
+You'll need to install Flask[async] and aiohttp in order to run these scripts.
+
 ### chat.py: 
 Provides a basic chat interface to talk with all of the LLMs.
 ```console
